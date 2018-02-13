@@ -1,5 +1,4 @@
-deploy:
-  provider: script
-  script: bash scripts/deploy.sh
-  on:
-    branch: master
+language: php
+php:
+  - 7.1.9
+  script: true

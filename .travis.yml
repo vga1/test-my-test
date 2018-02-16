@@ -3,10 +3,10 @@ all_branches: true
 services:
   - docker
 
-language: python
-
-python:
-  - '2.7'
+language: php
+php:
+  - '5.4'
+  - '5.6'
 
 script: nosetests
 

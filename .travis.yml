@@ -1,17 +1,5 @@
 sudo: required
-# blocklist 
-branches: 
-except: 
-- legacy 
-- experimental 
-# safelist 
-branches: 
-only: 
-- master 
-- stable
-- test
-
-
+all_branches: true
 services:
   - docker
 
@@ -23,6 +11,6 @@ python:
 script: nosetests
 
 deploy:
-all_branches: true
+
   on:
     branch:master

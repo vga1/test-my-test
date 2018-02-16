@@ -11,6 +11,7 @@ only:
 - stable
 - test
 
+
 services:
   - docker
 
@@ -22,6 +23,6 @@ python:
 script: nosetests
 
 deploy:
-
+all_branches: true
   on:
     branch:master
